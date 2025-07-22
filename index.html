@@ -1,67 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task Manager - Stay Organized</title>
-    <link rel="stylesheet" href="styles.css">
-    
+    <link rel="stylesheet" href="styles.css" />
+
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-4N6XDX07LR"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'GA_MEASUREMENT_ID');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-4N6XDX07LR");
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <h1>📋 Task Manager</h1>
-            <p>Stay organized and boost your productivity</p>
-        </header>
+      <header>
+        <h1>📋 Task Manager</h1>
+        <p>Stay organized and boost your productivity</p>
+      </header>
 
-        <main>
-            <div class="add-task-section">
-                <input type="text" id="taskInput" placeholder="What needs to be done?" maxlength="200">
-                <button id="addBtn">Add Task</button>
-            </div>
+      <main>
+        <div class="add-task-section">
+          <input
+            type="text"
+            id="taskInput"
+            placeholder="What needs to be done?"
+            maxlength="200"
+          />
+          <button type="button" id="addBtn">Add Task</button>
+        </div>
 
-            <div class="filter-section">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="pending">Pending</button>
-                <button class="filter-btn" data-filter="completed">Completed</button>
-            </div>
+        <div class="filter-section">
+          <button type="button" class="filter-btn active" data-filter="all">All</button>
+          <button type="button" class="filter-btn" data-filter="pending">Pending</button>
+          <button type="button" class="filter-btn" data-filter="completed">Completed</button>
+        </div>
 
-            <div class="stats">
-                <div class="stat">
-                    <span class="stat-number" id="totalTasks">0</span>
-                    <span class="stat-label">Total Tasks</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number" id="completedTasks">0</span>
-                    <span class="stat-label">Completed</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number" id="pendingTasks">0</span>
-                    <span class="stat-label">Pending</span>
-                </div>
-            </div>
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-number" id="totalTasks">0</span>
+            <span class="stat-label">Total Tasks</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" id="completedTasks">0</span>
+            <span class="stat-label">Completed</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" id="pendingTasks">0</span>
+            <span class="stat-label">Pending</span>
+          </div>
+        </div>
 
-            <ul id="taskList" class="task-list"></ul>
-            
-            <div class="empty-state" id="emptyState">
-                <h3>No tasks yet!</h3>
-                <p>Add your first task above to get started.</p>
-            </div>
-        </main>
+        <ul id="taskList" class="task-list"></ul>
 
-        <footer>
-            <p>Built with ❤️ and powered by Google Analytics</p>
-        </footer>
+        <div class="empty-state" id="emptyState">
+          <h3>No tasks yet!</h3>
+          <p>Add your first task above to get started.</p>
+        </div>
+      </main>
+
+      <footer>
+        <p>Built with ❤️ and powered by Google Analytics</p>
+      </footer>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
